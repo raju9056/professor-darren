@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Darren_Experiment</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta name='viewport' content='width=device-width,initial-sclae='1.0' />
+	<link rel="stylesheet" href="Style.css">
+
+	<style>	
+
+	</style>
+</head>
+<body>
+	<img class = 'background_image' id = 'image' src = 'one.png' >
+	<img class='background_image' id = 'image1' src = 'one_yellow.png'>
+	<div class = "parent" >
+		<p class = "name">Darren DeFrain</p>
+		<div class='one'>
+			<a href="#" onmouseover = 'change()' onmouseout = 'retreive()'>Home</a>
+			<span class='asterisk'>&#10022</span>
+			<a href="./About.html" onmouseover = 'change()' onmouseout = 'retreive()'>About</a>
+		</div>
+		<div class='two'>
+			<a href="./Fiction.html" onmouseover = 'change()' onmouseout = 'retreive()'>Fiction</a>
+			<span class='asterisk'>&#10022</span>
+			<a href="./NonFiction.html" onmouseover = 'change()' onmouseout = 'retreive()'>Non-Fiction</a>
+			<span class='asterisk'>&#10022</span>
+			<a href="./Teaching.html" onmouseover = 'change()' onmouseout = 'retreive()'>Teaching</a>
+		</div>
+		<div class='three'>
+			<a href="./Graphic.html" onmouseover = 'change()' onmouseout = 'retreive()'>Graphic Novels/Vizling</a>	
+		</div>
+		<div class='four'>
+			<a target='_blank' href="https://twitter.com/darren_defrain" onmouseover = 'change()' onmouseout = 'retreive()'>Twitter</a>
+			<span class='asterisk'>&#10022</span>
+			<a target='_blank' href="https://www.facebook.com/profile.php?id=655511240&sk=about" onmouseover = 'change()' onmouseout = 'retreive()'>Facebook</a>
+			<span class='asterisk'>&#10022</span>
+			<a href="mailto: darren.defrain@wichita.edu" onmouseover = 'change()' onmouseout = 'retreive()'>Contact</a>
+		</div>
+	</div>
+	</img>
+</body>
+	<script type='text/javascript' >
+		window.onload = function () {
+		var one = document.getElementById('image1').style.display = 'none';
+	}
+
+	function change(){
+		document.getElementById('image').style.display = 'none';
+		document.getElementById('image1').style.display = 'block';
+	}
+
+	function retreive(){
+		document.getElementById('image').style.display = 'block';
+		document.getElementById('image1').style.display = 'none';
+	}
+		
+	</script>
+</html>
